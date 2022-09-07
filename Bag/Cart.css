@@ -1,0 +1,275 @@
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    width:90%;
+    margin:auto;
+  }
+  
+  .product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  .product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 350px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+   
+    overflow: hidden;
+  }
+  
+  .product-thumb {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+  }
+  
+  .card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+  }
+  
+  .product-card:hover .card-btn {
+    opacity: 1;
+  }
+  
+  .card-btn:hover {
+    background: #ff7d7d;
+    color: #fff;
+  }
+  
+  .product-info {
+    width: 70%;
+    height: 80px;
+    padding-top: 10px;
+    margin:auto;
+  }
+  
+  .product-brand {
+    text-transform: uppercase;
+  }
+  
+  .product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+  
+  .price {
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+  
+  .pre-btn,
+  .nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+  }
+  .nxt-btn img{
+    width: 50%;
+    height: 10vh;
+  }
+  .pre-btn img{
+    width: 50%;
+    height: 10vh;
+  }
+  .pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  
+  .nxt-btn {
+    right: 0;
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  
+  .collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .collection {
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+  }
+  
+  .collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+
+  #footer{
+        
+    border-top: 1px solid black;
+ 
+  display: flex;
+  flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    
+ 
+   font-size: 15px;
+   height:350px;
+   margin-top: 20pxpx;
+   
+ 
+    
+}
+#left{
+
+margin-top: 30px;
+width: 30%;
+gap: 40px;
+margin-left: 30px;
+padding-left: 10px;
+color: #737070
+
+
+}
+#footer_icons{
+margin-top: 30px;
+margin-bottom: 30px;
+width: 70%;
+display: flex;
+justify-content: space-between;
+color: black    ;
+margin-left: 10px;
+margin-right: -10px ;
+margin-bottom: 60px;
+height: 15px;
+
+
+
+
+}
+#footer_icons a{
+
+text-decoration: none;
+color: black;
+
+}
+
+input{
+border: none;
+margin-top: 20px;
+margin-bottom: 18px;
+}
+a{
+color: #999999
+}
+#right{
+
+width: 75%;
+display: flex;
+gap: 40px;
+}
+.footer_ref{
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-top: 20px;
+line-height: 24px;
+}
+.footer_ref a{
+text-decoration: none;
+color: #999999
+}
+.footer_divs~div,#one{
+margin-top: 30px;
+color: #737070
+
+
+}
+/*////////////////////////////////*/
